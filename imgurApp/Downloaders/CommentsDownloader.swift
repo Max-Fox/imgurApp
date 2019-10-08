@@ -12,9 +12,9 @@ import Foundation
 class CommentsDownloader {
     
     /// Client ID для доступа к API
-    let clientID = "8bb89871e2b795e"
+    private let clientID = "8bb89871e2b795e"
     /// Возвращает url для конкретной фотографии
-    var url: String {
+    private var url: String {
         return "https://api.imgur.com/3/gallery/\(idImage)/comments/best"
     }
     /// ID изображения, используется в url

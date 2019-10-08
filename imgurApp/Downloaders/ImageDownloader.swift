@@ -11,9 +11,9 @@ import UIKit
 class ImageDownloader {
     
     /// ClientID для доступа к методам API
-    let clientID = "8bb89871e2b795e"
+    private let clientID = "8bb89871e2b795e"
     /// url api
-    var url: String {
+    private var url: String {
         return "https://api.imgur.com/3/gallery/hot/viral/day/\(page)?showViral=true&album_previews=true"
     }
     /// Номер страницы, используется в url

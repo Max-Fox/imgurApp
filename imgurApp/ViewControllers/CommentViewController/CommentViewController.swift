@@ -12,11 +12,11 @@ import UIKit
 class CommentViewController: UIViewController {
     
     /// Идентификатор ячейки
-    let reuseIdentifier = "commentCell"
+    private let reuseIdentifier = "commentCell"
     /// Через этот объект проиходит вся загрузка комментариев
     var commentsDownloader: CommentsDownloader?
     /// Список комментариев
-    var comments: Comments?
+    private var comments: Comments?
     /// Изображение
     var image: UIImage? {
         didSet {

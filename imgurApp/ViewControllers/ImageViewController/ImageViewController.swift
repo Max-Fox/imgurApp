@@ -16,13 +16,13 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var imageCollectionView: UICollectionView!
     
     /// Идентификатор ячейки
-    let reuseIdentifire = "ImageCell"
+    private let reuseIdentifire = "ImageCell"
     /// Объект галереи
-    var gallery: Gallery?
+    private var gallery: Gallery?
     /// Через этот объект происходит вся загрузка изображений
     var imageDownloader: ImageDownloader?
     /// Текущая страница популярных изображений
-    var currentPage = 0 {
+    private var currentPage = 0 {
         didSet {
             self.imageDownloader?.page = self.currentPage
             self.title = "Most popular. Page \(self.currentPage + 1)" // + 1 потому что не корректно "Page 0"
